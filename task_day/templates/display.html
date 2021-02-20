@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ambassador Details</title>
+</head>
+<body>
+{{msg}}
+<table border=5>
+    <thead>
+    <td>Date</td>
+    <td>Ambassador Id</td>
+    <td>Queue Id</td>
+    <td>State</td>
+    <td>Amount</td>
+    <td>Reason</td>
+    <td>Task Count</td>
+    </thead>
+
+
+   {% for row in rows %}
+<tr>
+    <td>{{row["Date"]}}</td>
+    <td>{{row["amba"]}}</td>
+    <td>{{row["queue_id"]}}</td>
+    <td>{{row["state"]}}</td>
+    <td>{{row["amount"]}}</td>
+    <td>{{row["reason"]}}</td>
+    <td>{{row["task_counter"]}}</td>
+</tr>
+    {% endfor %}
+
+
+
+</table>
+
+
+
+</body>
+</html>
